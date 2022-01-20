@@ -1,0 +1,14 @@
+<Configuration>
+    <Appenders>
+        <Console name="Out">
+            <PatternLayout pattern="%m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="java.io.serialization" level="TRACE" />
+        <Logger name="org.example" level="DEBUG"/>
+        <Root level="WARN">
+            <AppenderRef ref="Out"/>
+        </Root>
+    </Loggers>
+</Configuration>
